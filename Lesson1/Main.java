@@ -65,6 +65,15 @@ public class Main {
         }
     }
 
+    public static boolean isLeapYear(int year) {
+        if (year % 400 == 0) {
+            return true;
+        } else if (year % 100 == 0) {
+            return false;
+        } else {
+            return year % 4 == 0;
+        }
+    }
     public static void main(String[] args) {
         printThreeWords();
         checkSumSign();
@@ -85,5 +94,10 @@ public class Main {
             System.out.println("число >=0: false");
 
         printStringMultipleTimes("Hello, Dolly", 4);
+
+        if(isLeapYear(2020))
+            System.out.println("високосный");
+        else
+            System.out.println("невисокосный");
     }
 }
