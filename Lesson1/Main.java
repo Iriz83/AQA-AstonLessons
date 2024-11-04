@@ -74,6 +74,24 @@ public class Main {
             return year % 4 == 0;
         }
     }
+
+    public static void changeArr() {
+        int[] a = {0,1,0,1,1,1,1,0,0,0};
+        System.out.println("Было");
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i]);
+        }
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] == 0)
+                a[i] = 1;
+            else
+                a[i] = 0;
+        }
+        System.out.println("\nСтало");
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i]);
+        }
+    }
     public static void main(String[] args) {
         printThreeWords();
         checkSumSign();
@@ -99,5 +117,7 @@ public class Main {
             System.out.println("високосный");
         else
             System.out.println("невисокосный");
+
+        changeArr();
     }
 }
