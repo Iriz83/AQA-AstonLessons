@@ -55,16 +55,35 @@ public class Main {
             System.out.println("отрицательное");
         }
     }
+    public static boolean compareWithZero2 (int a) {
+        return a < 0;
+
+    }
+    public static void printStringMultipleTimes(String text, int times) {
+        for (int i = 0; i < times; i++) {
+            System.out.println(text);
+        }
+    }
 
     public static void main(String[] args) {
         printThreeWords();
         checkSumSign();
         printColor();
+
         compareNumbers();
+
         if(compareSum(100, -90))
             System.out.println("method returned true");
         else
             System.out.println("method returned false");
+
         compareWithZero(15);
+
+        if(compareWithZero2(-10))
+            System.out.println("число отрицательное: true");
+        else
+            System.out.println("число >=0: false");
+
+        printStringMultipleTimes("Hello, Dolly", 4);
     }
 }
