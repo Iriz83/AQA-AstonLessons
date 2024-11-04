@@ -47,14 +47,24 @@ public class Main {
 
     }
 
+    public static void compareWithZero(int a)
+    {
+        if (a >= 0) {
+            System.out.println("положительное");
+        } else {
+            System.out.println("отрицательное");
+        }
+    }
+
     public static void main(String[] args) {
         printThreeWords();
         checkSumSign();
         printColor();
         compareNumbers();
         if(compareSum(100, -90))
-            System.out.println("sum is true");
+            System.out.println("method returned true");
         else
-            System.out.println("sum is false");
+            System.out.println("method returned false");
+        compareWithZero(10);
     }
 }
