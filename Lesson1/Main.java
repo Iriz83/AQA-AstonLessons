@@ -37,7 +37,14 @@ public class Main {
             System.out.println("a >= b");
         } else {
             System.out.println("a < b");
+        }
     }
+
+    public static boolean compareSum(int a, int b) {
+
+        int sum = (a + b);
+        return sum >= 10 && sum <= 20;
+
     }
 
     public static void main(String[] args) {
@@ -45,6 +52,9 @@ public class Main {
         checkSumSign();
         printColor();
         compareNumbers();
-    }}
-
-
+        if(compareSum(100, -90))
+            System.out.println("sum is true");
+        else
+            System.out.println("sum is false");
+    }
+}
