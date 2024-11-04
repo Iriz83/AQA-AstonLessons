@@ -65,6 +65,6 @@ public class Main {
             System.out.println("method returned true");
         else
             System.out.println("method returned false");
-        compareWithZero(10);
+        compareWithZero(15);
     }
 }
