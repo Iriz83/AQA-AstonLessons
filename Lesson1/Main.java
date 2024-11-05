@@ -128,6 +128,16 @@ public class Main {
             System.out.println();
         }
     }
+
+    public static int[] CreateLenArray (int len, int initialValue){
+        int [] a = new int[len];
+        for (int i = 0; i < a.length; i++){
+            a[i] = initialValue;
+        }
+        return a;
+    }
+
+
     public static void main(String[] args) {
         printThreeWords();
         checkSumSign();
@@ -159,6 +169,13 @@ public class Main {
         fillArrayWithNumbers();
         changeNumbersLessSix();
         fillDiagonal(5);
+
+            int[] resultArray = CreateLenArray(5, 3);
+            System.out.println();
+            for (int value : resultArray) {
+                System.out.print(value + " ");
+            }
+            System.out.println();
 
     }
 }
