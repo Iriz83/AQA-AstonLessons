@@ -170,7 +170,7 @@ public class Main {
         changeNumbersLessSix();
         fillDiagonal(5);
 
-            int[] resultArray = CreateLenArray(5, 3);
+            int[] resultArray = CreateLenArray(7, 5);
             System.out.println();
             for (int value : resultArray) {
                 System.out.print(value + " ");
