@@ -77,9 +77,8 @@ public class Main {
 
     public static void changeArr() {
         int[] a = {0,1,0,1,1,1,1,0,0,0};
-        System.out.println("Было");
         for (int i = 0; i < a.length; i++) {
-            System.out.print(a[i]);
+
         }
         for (int i = 0; i < a.length; i++) {
             if (a[i] == 0)
@@ -87,11 +86,25 @@ public class Main {
             else
                 a[i] = 0;
         }
-        System.out.println("\nСтало");
+        System.out.println("Стало:");
         for (int i = 0; i < a.length; i++) {
             System.out.print(a[i]);
         }
     }
+
+    public static void fillArrayWithNumbers() {
+        int[] a = new int[100];
+
+        for (int i = 0; i < a.length; i++) {
+            a[i] = i + 1;
+        }
+        System.out.println();
+
+        for (int value : a) {
+            System.out.print(value + " ");
+        }
+    }
+
     public static void main(String[] args) {
         printThreeWords();
         checkSumSign();
@@ -119,5 +132,8 @@ public class Main {
             System.out.println("невисокосный");
 
         changeArr();
+
+        fillArrayWithNumbers();
+
     }
 }
