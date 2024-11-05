@@ -104,7 +104,30 @@ public class Main {
             System.out.print(value + " ");
         }
     }
+    public static void changeNumbersLessSix() {
+        int[] a = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] <6) {
+                a[i] *= 2;
+        }
+    }
+        System.out.println();
+        for (int value : a) {
+            System.out.print(value + " ");
+        }
+    }
 
+    public static void fillDiagonal(int size) {
+        int[][] a = new int[size][size];
+        System.out.println();
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                a[i][i] = 1;
+                System.out.print(a[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
     public static void main(String[] args) {
         printThreeWords();
         checkSumSign();
@@ -134,6 +157,8 @@ public class Main {
         changeArr();
 
         fillArrayWithNumbers();
+        changeNumbersLessSix();
+        fillDiagonal(5);
 
     }
 }
